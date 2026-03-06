@@ -3259,8 +3259,9 @@
               <line x1="290" y1="55" x2="100" y2="120" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="mega-brain" data-to="claude"/>
               <line x1="290" y1="55" x2="290" y2="120" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="mega-brain" data-to="vscode"/>
               <line x1="290" y1="55" x2="480" y2="120" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="mega-brain" data-to="nodejs"/>
-              <line x1="100" y1="175" x2="100" y2="220" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="claude" data-to="apikeys"/>
-              <line x1="480" y1="175" x2="480" y2="220" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="nodejs" data-to="python"/>
+              <line x1="480" y1="175" x2="100" y2="220" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="nodejs" data-to="python"/>
+              <line x1="290" y1="175" x2="290" y2="220" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="vscode" data-to="download"/>
+              <line x1="100" y1="175" x2="480" y2="220" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="6 4" class="arch-line" data-from="claude" data-to="apikeys"/>
 
               <!-- Mega Brain (top center) -->
               <rect x="210" y="10" width="160" height="45" rx="8" fill="rgba(212,175,55,0.08)" stroke="#D4AF37" stroke-width="1.5"/>
@@ -3288,16 +3289,22 @@
                 <text x="480" y="163" text-anchor="middle" fill="#999999" font-size="11">O motor que roda tudo</text>
               </a>
 
-              <!-- API Keys (bottom left) -->
-              <a href="#step-6" class="arch-node-link" data-step="6">
-                <rect x="30" y="220" width="140" height="45" rx="8" fill="transparent" stroke="rgba(212,175,55,0.3)" stroke-width="1" class="arch-node" data-step="6"/>
-                <text x="100" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">API Keys</text>
+              <!-- Python (bottom left) -->
+              <a href="#step-4" class="arch-node-link" data-step="4">
+                <rect x="30" y="220" width="140" height="45" rx="8" fill="transparent" stroke="rgba(212,175,55,0.3)" stroke-width="1" class="arch-node" data-step="4"/>
+                <text x="100" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">Python</text>
               </a>
 
-              <!-- Python (bottom right) -->
-              <a href="#step-4" class="arch-node-link" data-step="4">
-                <rect x="410" y="220" width="140" height="45" rx="8" fill="transparent" stroke="rgba(212,175,55,0.3)" stroke-width="1" class="arch-node" data-step="4"/>
-                <text x="480" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">Python</text>
+              <!-- Download Mega Brain (bottom center) -->
+              <a href="#step-5" class="arch-node-link" data-step="5">
+                <rect x="220" y="220" width="140" height="45" rx="8" fill="transparent" stroke="rgba(212,175,55,0.3)" stroke-width="1" class="arch-node" data-step="5"/>
+                <text x="290" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">Download</text>
+              </a>
+
+              <!-- API Keys (bottom right) -->
+              <a href="#step-6" class="arch-node-link" data-step="6">
+                <rect x="410" y="220" width="140" height="45" rx="8" fill="transparent" stroke="rgba(212,175,55,0.3)" stroke-width="1" class="arch-node" data-step="6"/>
+                <text x="480" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">API Keys</text>
               </a>
 
               <!-- Step number badges -->
@@ -3310,11 +3317,14 @@
               <circle cx="480" cy="107" r="10" fill="#0A0A0F" stroke="rgba(212,175,55,0.5)" stroke-width="1" class="arch-step-badge" data-step="3"/>
               <text x="480" y="111" text-anchor="middle" fill="#D4AF37" font-size="10" font-weight="700">3</text>
 
-              <circle cx="480" cy="207" r="10" fill="#0A0A0F" stroke="rgba(212,175,55,0.5)" stroke-width="1" class="arch-step-badge" data-step="4"/>
-              <text x="480" y="211" text-anchor="middle" fill="#D4AF37" font-size="10" font-weight="700">4</text>
+              <circle cx="100" cy="207" r="10" fill="#0A0A0F" stroke="rgba(212,175,55,0.5)" stroke-width="1" class="arch-step-badge" data-step="4"/>
+              <text x="100" y="211" text-anchor="middle" fill="#D4AF37" font-size="10" font-weight="700">4</text>
 
-              <circle cx="100" cy="207" r="10" fill="#0A0A0F" stroke="rgba(212,175,55,0.5)" stroke-width="1" class="arch-step-badge" data-step="6"/>
-              <text x="100" y="211" text-anchor="middle" fill="#D4AF37" font-size="10" font-weight="700">6</text>
+              <circle cx="290" cy="207" r="10" fill="#0A0A0F" stroke="rgba(212,175,55,0.5)" stroke-width="1" class="arch-step-badge" data-step="5"/>
+              <text x="290" y="211" text-anchor="middle" fill="#D4AF37" font-size="10" font-weight="700">5</text>
+
+              <circle cx="480" cy="207" r="10" fill="#0A0A0F" stroke="rgba(212,175,55,0.5)" stroke-width="1" class="arch-step-badge" data-step="6"/>
+              <text x="480" y="211" text-anchor="middle" fill="#D4AF37" font-size="10" font-weight="700">6</text>
             </svg>
           </div>
 
@@ -3494,12 +3504,12 @@
           <div class="card" style="flex: 1; min-width: 260px;">
             <div style="display: inline-block; background: var(--color-gold-dim); color: var(--color-gold); padding: 4px 12px; border-radius: 6px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 14px; margin-bottom: var(--space-md);">Pro</div>
             <div style="font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 28px; color: var(--color-text); margin-bottom: var(--space-sm);">Plano Pago</div>
-            <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary); line-height: 1.6;">Funciona para uso normal do Mega Brain. Tem limites mensais de uso -- bom para começar e testar o sistema. Consulte os valores em <a href="https://claude.ai/pricing" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold);">claude.ai/pricing</a>.</p>
+            <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary); line-height: 1.6;">Funciona para uso normal do Mega Brain. Tem limites mensais de uso -- bom para começar e testar o sistema. Consulte os valores em <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold);">claude.com/pricing</a>.</p>
           </div>
           <div class="card" style="flex: 1; min-width: 260px; border-color: var(--color-gold);">
             <div style="display: inline-block; background: var(--color-gold-dim); color: var(--color-gold); padding: 4px 12px; border-radius: 6px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 14px; margin-bottom: var(--space-md);">Max</div>
             <div style="font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 28px; color: var(--color-text); margin-bottom: var(--space-sm);">Plano Avançado</div>
-            <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary); line-height: 1.6;">Recomendado para uso intenso. Sem limites de uso mensal -- ideal se você usa o pipeline todo dia. Consulte os valores em <a href="https://claude.ai/pricing" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold);">claude.ai/pricing</a>.</p>
+            <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary); line-height: 1.6;">Recomendado para uso intenso. Sem limites de uso mensal -- ideal se você usa o pipeline todo dia. Consulte os valores em <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold);">claude.com/pricing</a>.</p>
           </div>
         </div>
 
