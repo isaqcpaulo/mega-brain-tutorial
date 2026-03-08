@@ -3987,35 +3987,12 @@ node : O termo 'node' não é reconhecido...</div>
         <!-- AC12: Transition block with EXACT recap and bridge text -->
         <div class="block-transition block-transition--animate">
           <div class="block-transition__recap">Na etapa anterior, você instalou o Node.js -- o motor que faz o Mega Brain funcionar. Percebeu que foi rápido?</div>
-          <div class="block-transition__bridge">Agora vamos instalar o Python, que cuida dos scripts de inteligência artificial. Mesma lógica: baixar, instalar, verificar. Tem UM detalhe importante nesta etapa -- veja o alerta vermelho logo abaixo. Fora isso, é idêntico.</div>
+          <div class="block-transition__bridge">Agora vamos instalar o Python, que cuida dos scripts de inteligência artificial. Mesma lógica: baixar, instalar, verificar. Selecione seu sistema (Windows ou Mac) -- cada um tem um passo diferente.</div>
         </div>
 
         <!-- AC13: Opening "por que" paragraph -->
         <div class="block-instruction">
           <p>O Python executa os scripts de inteligência artificial do Mega Brain. É ele que faz a mágica acontecer nos bastidores.</p>
-        </div>
-
-        <!-- AC14 (R24): CRITICAL danger alert - EXACT text from story, BEFORE download instructions -->
-        <!-- AC15: role="alert" for screen readers -->
-        <div class="alert-danger" role="alert" style="animation: pulse 2s ease-in-out infinite;">
-          <div class="alert__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-          </div>
-          <div class="alert__content">
-            <div class="alert__title" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; color: #FF4444;">PARE AQUI ANTES DE CLICAR EM INSTALAR</div>
-            <div class="alert__body">
-              <p style="margin-bottom: var(--space-sm);">Na primeira tela do instalador, lá embaixo, tem um checkbox escrito "Add python.exe to <span class="glossary-term" data-term="path" tabindex="0" role="button" aria-describedby="tooltip-glossary">PATH</span>". Esse checkbox vem DESMARCADO.</p>
-              <p style="margin-bottom: var(--space-sm);">Você precisa MARCAR ele antes de clicar em "Install Now".</p>
-              <p style="margin-bottom: var(--space-sm);">Se instalar sem marcar, o Python fica instalado mas o seu computador não sabe onde encontrar ele. Aí nada funciona.</p>
-              <p style="margin-bottom: var(--space-md);">(Se já instalou sem marcar: desinstale, e instale de novo marcando o checkbox desta vez. Não tem problema.)</p>
-
-              <!-- AC16: Screenshot SS-01 INSIDE the alert block -->
-              <figure class="screenshot-figure" style="margin-top: var(--space-sm);">
-                <img src="screenshots/SS-01.png" alt="Instalador Python com checkbox Add to PATH destacado" class="screenshot-img" loading="lazy">
-                <figcaption class="screenshot-caption">Instalador Python -- checkbox "Add python.exe to PATH"</figcaption>
-              </figure>
-            </div>
-          </div>
         </div>
 
         <!-- AC18: OS Tabs with Windows and Mac content -->
@@ -4033,6 +4010,27 @@ node : O termo 'node' não é reconhecido...</div>
 
           <!-- Windows tab content -->
           <div class="os-tabs__panel" role="tabpanel" data-os="windows" id="os-panel-win-4" aria-labelledby="os-tab-win-4" aria-hidden="true">
+            <!-- AC14 (R24): CRITICAL danger alert - Windows only -->
+            <div class="alert-danger" role="alert" style="animation: pulse 2s ease-in-out infinite;">
+              <div class="alert__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; color: #FF4444;">PARE AQUI ANTES DE CLICAR EM INSTALAR</div>
+                <div class="alert__body">
+                  <p style="margin-bottom: var(--space-sm);">Na primeira tela do instalador, lá embaixo, tem um checkbox escrito "Add python.exe to <span class="glossary-term" data-term="path" tabindex="0" role="button" aria-describedby="tooltip-glossary">PATH</span>". Esse checkbox vem DESMARCADO.</p>
+                  <p style="margin-bottom: var(--space-sm);">Você precisa MARCAR ele antes de clicar em "Install Now".</p>
+                  <p style="margin-bottom: var(--space-sm);">Se instalar sem marcar, o Python fica instalado mas o seu computador não sabe onde encontrar ele. Aí nada funciona.</p>
+                  <p style="margin-bottom: var(--space-md);">(Se já instalou sem marcar: desinstale, e instale de novo marcando o checkbox desta vez. Não tem problema.)</p>
+
+                  <!-- AC16: Screenshot SS-01 INSIDE the alert block -->
+                  <figure class="screenshot-figure" style="margin-top: var(--space-sm);">
+                    <img src="screenshots/SS-01.png" alt="Instalador Python com checkbox Add to PATH destacado" class="screenshot-img" loading="lazy">
+                    <figcaption class="screenshot-caption">Instalador Python -- checkbox "Add python.exe to PATH"</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
             <div class="block-action">
               <p style="margin-bottom: var(--space-md); font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text);">Acesse a página de downloads do Python:</p>
               <div class="code-block">
@@ -4051,6 +4049,15 @@ node : O termo 'node' não é reconhecido...</div>
 
           <!-- Mac tab content -->
           <div class="os-tabs__panel" role="tabpanel" data-os="mac" id="os-panel-mac-4" aria-labelledby="os-tab-mac-4" aria-hidden="true">
+            <div class="alert-info" role="note" style="margin-bottom: var(--space-md);">
+              <div class="alert__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">No Mac nao precisa do "Add to PATH"</div>
+                <div class="alert__body">Diferente do Windows, o instalador do Mac configura o PATH automaticamente. Nao vai aparecer essa opcao e esta tudo certo -- basta instalar normalmente.</div>
+              </div>
+            </div>
             <div class="block-instruction">
               <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text);">No Mac, Python 3 pode já vir instalado. Vamos verificar isso primeiro.</p>
             </div>
@@ -4081,20 +4088,51 @@ node : O termo 'node' não é reconhecido...</div>
             <ol style="font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text); line-height: 1.8; padding-left: var(--space-lg); margin-top: var(--space-md);">
               <li>Clique em <strong>Download Python 3.12.x</strong> para Mac</li>
               <li>Abra o arquivo .pkg baixado e siga o instalador</li>
+              <li>Feche e reabra o terminal depois da instalação</li>
             </ol>
+            <div class="alert-info" role="note" style="margin-top: var(--space-md);">
+              <div class="alert__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+              <div class="alert__content">
+                <div class="alert__title">Importante: use python3, nao python</div>
+                <div class="alert__body">No Mac, o comando e <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python3</code> (com o 3). Digitar apenas <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python</code> pode nao funcionar -- isso e normal e nao significa erro.</div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- AC19: Verification block -->
         <div class="block-verify">
           <h3>Como verificar</h3>
-          <p>Abra o <span class="glossary-term" data-term="terminal" tabindex="0" role="button" aria-describedby="tooltip-glossary">terminal</span> do VS Code (<strong>Ctrl+`</strong>) e digite:</p>
-          <div class="code-block" style="margin-top: var(--space-md);">
-            <code class="code-block__code">python --version</code>
-            <button class="code-block__copy" type="button" aria-label="Copiar comando">Copiar</button>
-            <span class="code-block__sr-status" aria-live="polite"></span>
+          <p>Abra o <span class="glossary-term" data-term="terminal" tabindex="0" role="button" aria-describedby="tooltip-glossary">terminal</span> do VS Code (<strong>Ctrl+`</strong> no Windows, <strong>Cmd+`</strong> no Mac) e digite:</p>
+          <div class="os-tabs">
+            <div class="os-tabs__tablist" role="tablist" aria-label="Selecione seu sistema operacional para verificacao">
+              <button class="os-tabs__tab" role="tab" data-os="windows" aria-selected="false" aria-controls="os-panel-win-4v" id="os-tab-win-4v" tabindex="-1">
+                <svg class="os-tabs__tab-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.75l6-1.32v6.48L3 12zm6.41.09l7.59-.05V4.52l-7.59 1.67v5.9zM17.59 12v6.39l-7.59 1.67v-8.06h7.59zM3 12.09l6 .09v6.81L3 17.25v-5.16z"></path></svg>
+                Windows
+              </button>
+              <button class="os-tabs__tab" role="tab" data-os="mac" aria-selected="false" aria-controls="os-panel-mac-4v" id="os-tab-mac-4v" tabindex="-1">
+                <svg class="os-tabs__tab-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path></svg>
+                Mac
+              </button>
+            </div>
+            <div class="os-tabs__panel" role="tabpanel" data-os="windows" id="os-panel-win-4v" aria-labelledby="os-tab-win-4v" aria-hidden="true">
+              <div class="code-block" style="margin-top: var(--space-md);">
+                <code class="code-block__code">python --version</code>
+                <button class="code-block__copy" type="button" aria-label="Copiar comando">Copiar</button>
+                <span class="code-block__sr-status" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="os-tabs__panel" role="tabpanel" data-os="mac" id="os-panel-mac-4v" aria-labelledby="os-tab-mac-4v" aria-hidden="true">
+              <div class="code-block" style="margin-top: var(--space-md);">
+                <code class="code-block__code">python3 --version</code>
+                <button class="code-block__copy" type="button" aria-label="Copiar comando">Copiar</button>
+                <span class="code-block__sr-status" aria-live="polite"></span>
+              </div>
+              <p style="margin-top: var(--space-sm); font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary);">No Mac, o comando e sempre <strong>python3</strong> (com o 3). Nao use apenas "python".</p>
+            </div>
           </div>
-          <p style="margin-top: var(--space-sm); font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary);">No Mac, tente <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python3 --version</code> se <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python</code> não funcionar</p>
           <p style="margin-top: var(--space-sm); font-family: 'Inter', sans-serif; font-size: 15px; color: var(--color-text-secondary);">Deve mostrar Python 3.10.x ou maior</p>
         </div>
 
@@ -4102,7 +4140,10 @@ node : O termo 'node' não é reconhecido...</div>
         <div class="terminal-compare">
           <div class="terminal-compare__panel terminal-compare__panel--success">
             <h4>Se deu certo</h4>
-            <div class="terminal-compare__output">$ python --version
+            <div class="terminal-compare__output">$ python --version        <span style="color: #888;">(Windows)</span>
+Python 3.12.1
+
+$ python3 --version       <span style="color: #888;">(Mac)</span>
 Python 3.12.1</div>
           </div>
           <div class="terminal-compare__panel terminal-compare__panel--error">
@@ -4121,11 +4162,13 @@ Python 3.12.1</div>
           </button>
           <div class="troubleshoot-body">
             <div class="troubleshoot-body__inner">
-              <h4>'python' não é reconhecido</h4>
+              <h4>'python' não é reconhecido (Windows)</h4>
               <p>Isso significa que o <span class="glossary-term" data-term="path" tabindex="0" role="button" aria-describedby="tooltip-glossary">PATH</span> não foi configurado. Desinstale o Python, instale novamente e desta vez MARQUE o checkbox 'Add to PATH' na primeira tela.</p>
+              <h4>'python3' não encontrado (Mac)</h4>
+              <p>Feche e reabra o terminal depois da instalação. Se ainda não funcionar, tente instalar via Homebrew: abra o terminal e digite <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">brew install python3</code></p>
               <h4>Aparece versão 2.x</h4>
               <p>Você tem uma versão antiga. Tente digitar <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python3 --version</code>. Se funcionar, use <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python3</code> em vez de <code style="font-family: 'JetBrains Mono', monospace; background: var(--color-surface-alt); padding: 2px 6px; border-radius: 4px;">python</code> nos próximos passos.</p>
-              <h4>Instalação pede permissão de administrador</h4>
+              <h4>Instalação pede permissão de administrador (Windows)</h4>
               <p>Clique com botão direito no instalador e selecione 'Executar como administrador'.</p>
             </div>
           </div>
@@ -4140,7 +4183,7 @@ Python 3.12.1</div>
                 <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </span>
             </span>
-            <span class="step-complete-box__label">Concluí esta etapa -- Python instalado e funcionando (python --version mostra 3.10+)</span>
+            <span class="step-complete-box__label">Concluí esta etapa -- Python instalado e funcionando (python --version ou python3 --version mostra 3.10+)</span>
           </label>
           <div class="step-complete-box__celebration">
             <div class="confetti-container"></div>
