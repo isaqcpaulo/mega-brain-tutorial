@@ -3157,7 +3157,7 @@
         <a href="#step-3" class="step-indicator" role="link" aria-label="Ir para Etapa 3: Instalar Node.js" data-step="3">3</a>
         <a href="#step-4" class="step-indicator" role="link" aria-label="Ir para Etapa 4: Instalar Python" data-step="4">4</a>
         <a href="#step-5" class="step-indicator" role="link" aria-label="Ir para Etapa 5: Baixar o Mega Brain" data-step="5">5</a>
-        <a href="#step-6" class="step-indicator" role="link" aria-label="Ir para Etapa 6: Obter API Keys" data-step="6">6</a>
+        <a href="#step-6" class="step-indicator" role="link" aria-label="Ir para Etapa 6: Obter API Key" data-step="6">6</a>
         <a href="#step-7" class="step-indicator" role="link" aria-label="Ir para Etapa 7: Configurar o Mega Brain" data-step="7">7</a>
         <a href="#step-8" class="step-indicator" role="link" aria-label="Ir para Etapa 8: Primeiro Uso" data-step="8">8</a>
         <a href="#step-9" class="step-indicator" role="link" aria-label="Ir para Etapa 9: GitHub (Opcional)" data-step="9">9</a>
@@ -3304,7 +3304,7 @@
               <!-- API Keys (bottom right) -->
               <a href="#step-6" class="arch-node-link" data-step="6">
                 <rect x="410" y="220" width="140" height="45" rx="8" fill="transparent" stroke="rgba(212,175,55,0.3)" stroke-width="1" class="arch-node" data-step="6"/>
-                <text x="480" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">API Keys</text>
+                <text x="480" y="248" text-anchor="middle" fill="#E8E8E8" font-size="14" font-weight="500">API Key</text>
               </a>
 
               <!-- Step number badges -->
@@ -3352,7 +3352,7 @@
             </li>
             <li class="architecture-list__item">
               <span class="architecture-list__node" data-step="6" role="link" tabindex="0" aria-label="Ir para Etapa 6">6</span>
-              <span class="architecture-list__info"><span class="architecture-list__name">API Keys</span><span class="architecture-list__sub">Suas chaves de acesso</span></span>
+              <span class="architecture-list__info"><span class="architecture-list__name">API Key</span><span class="architecture-list__sub">Sua chave de acesso</span></span>
             </li>
             <li class="architecture-list__item">
               <span class="architecture-list__node" data-step="7" role="link" tabindex="0" aria-label="Ir para Etapa 7">7</span>
@@ -3421,10 +3421,10 @@
             <li class="landing-step-list__item" data-step="6" onclick="if(typeof MegaBrainTutorial!=='undefined') MegaBrainTutorial.navigateToStep(6);" role="link" tabindex="0">
               <span class="landing-step-list__circle" id="step-circle-6">6</span>
               <span class="landing-step-list__info">
-                <span class="landing-step-list__name">Obter API Keys</span>
-                <span class="landing-step-list__desc">Suas chaves de acesso</span>
+                <span class="landing-step-list__name">Obter API Key</span>
+                <span class="landing-step-list__desc">Sua chave de acesso</span>
               </span>
-              <span class="landing-step-list__time">~8 min</span>
+              <span class="landing-step-list__time">~4 min</span>
             </li>
             <li class="landing-step-list__item" data-step="7" onclick="if(typeof MegaBrainTutorial!=='undefined') MegaBrainTutorial.navigateToStep(7);" role="link" tabindex="0">
               <span class="landing-step-list__circle" id="step-circle-7">7</span>
@@ -3567,7 +3567,7 @@
 
               <h4>Erro no pagamento</h4>
               <ol style="font-size: 15px; line-height: 1.7; padding-left: var(--space-lg);">
-                <li>A Anthropic aceita cartões internacionais. Confira se seu cartão tem compras internacionais habilitadas</li>
+                <li>Confira se seu cartão tem compras internacionais habilitadas</li>
                 <li>Se o cartão for recusado, tente um cartão virtual (Nubank, Wise ou Inter funcionam)</li>
                 <li>Verifique se o endereço de cobrança está preenchido corretamente</li>
                 <li>Alguns bancos bloqueiam a primeira tentativa por segurança -- tente novamente após aprovar a notificação do banco</li>
@@ -4398,14 +4398,14 @@ fatal: repository not found</div>
         <!-- AC16: Time Badge -->
         <div class="time-badge">
           <svg class="time-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          ~8 minutos
+          ~4 minutos
         </div>
-        <h2 id="step-6-title">Etapa 6: Obter suas Chaves de Acesso (<span class="glossary-term" data-term="api-key" tabindex="0" role="button" aria-describedby="tooltip-glossary">API Keys</span>)</h2>
+        <h2 id="step-6-title">Etapa 6: Obter sua Chave de Acesso (<span class="glossary-term" data-term="api-key" tabindex="0" role="button" aria-describedby="tooltip-glossary">API Key</span>)</h2>
 
         <!-- AC18: Transition Block -->
         <div class="block-transition block-transition--animate">
           <div class="block-transition__recap">Na etapa anterior, você baixou o projeto Mega Brain para o seu computador.</div>
-          <div class="block-transition__bridge">Agora vamos obter as chaves de acesso aos serviços de IA. São duas chaves no total -- cada uma leva cerca de 4 minutos para criar.</div>
+          <div class="block-transition__bridge">Agora vamos obter a chave de acesso ao serviço de transcrição de áudio (OpenAI). Leva cerca de 4 minutos para criar.</div>
         </div>
 
         <!-- AC17: Pre-Check Block -->
@@ -4419,7 +4419,7 @@ fatal: repository not found</div>
 
         <!-- AC19: Opening explanation - API Key analogy (R23 style) -->
         <div class="block-instruction">
-          <p>Uma <span class="glossary-term" data-term="api-key" tabindex="0" role="button" aria-describedby="tooltip-glossary">API Key</span> é como a senha do Wi-Fi da sua casa. Sem ela, o Mega Brain não conecta na inteligência artificial. Você vai precisar de duas chaves: uma da Anthropic (para o Claude, a IA principal) e uma da OpenAI (para o Whisper, que transcreve áudios).</p>
+          <p>Uma <span class="glossary-term" data-term="api-key" tabindex="0" role="button" aria-describedby="tooltip-glossary">API Key</span> é como a senha do Wi-Fi da sua casa. Sem ela, o Mega Brain não conecta na inteligência artificial. Você vai precisar de uma chave da OpenAI (para o Whisper, que transcreve áudios). O Claude, a IA principal, já funciona com o login que você fez no VS Code na Etapa 2.</p>
         </div>
 
         <!-- AC21: Cost explanation info alert -->
@@ -4429,7 +4429,7 @@ fatal: repository not found</div>
           </div>
           <div class="alert__content">
             <div class="alert__title">Sobre custos</div>
-            <div class="alert__body">Cada plataforma cobra por uso da API. Adicione um valor inicial de crédito em cada uma — um valor pequeno já é suficiente para semanas de uso normal do Mega Brain. Consulte os preços diretamente em cada plataforma.</div>
+            <div class="alert__body">A OpenAI cobra por uso da API. Adicione um valor inicial de crédito -- um valor pequeno já é suficiente para semanas de uso normal do Mega Brain. Consulte os preços diretamente na plataforma.</div>
           </div>
         </div>
 
@@ -4444,26 +4444,8 @@ fatal: repository not found</div>
           </div>
         </div>
 
-        <!-- AC23: Chave 1 - ANTHROPIC_API_KEY -->
-        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 20px; color: var(--color-text); margin: var(--space-xl) 0 var(--space-md);">Chave 1: Anthropic (Claude)</h3>
-
-        <ol style="font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text); line-height: 1.8; padding-left: var(--space-lg);">
-          <li>Acesse <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer">console.anthropic.com</a></li>
-          <li>Crie uma conta ou faça login</li>
-          <li>No menu lateral, clique em <strong>API Keys</strong></li>
-          <li>Clique em <strong>Create Key</strong></li>
-          <li>Digite um nome para a chave (ex: 'mega-brain')</li>
-          <li>Copie a chave gerada e guarde em um lugar seguro -- ela NÃO vai aparecer novamente</li>
-        </ol>
-
-        <!-- AC23: Screenshot SS-03 -->
-        <figure class="screenshot-figure">
-          <img src="screenshots/SS-03.png" alt="Console Anthropic - página API Keys" class="screenshot-img" loading="lazy">
-          <figcaption class="screenshot-caption">Console Anthropic -- página API Keys</figcaption>
-        </figure>
-
-        <!-- AC24: Chave 2 - OPENAI_API_KEY -->
-        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 20px; color: var(--color-text); margin: var(--space-xl) 0 var(--space-md);">Chave 2: OpenAI (Whisper)</h3>
+        <!-- AC24: Chave - OPENAI_API_KEY (Whisper) -->
+        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 20px; color: var(--color-text); margin: var(--space-xl) 0 var(--space-md);">OpenAI (Whisper)</h3>
 
         <ol style="font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text); line-height: 1.8; padding-left: var(--space-lg);">
           <li>Acesse <a href="https://platform.openai.com" target="_blank" rel="noopener noreferrer">platform.openai.com</a></li>
@@ -4484,12 +4466,11 @@ fatal: repository not found</div>
         <!-- AC25: Verification block -->
         <div class="block-verify">
           <h3>Como verificar</h3>
-          <p>Você deve ter duas chaves copiadas e guardadas:</p>
+          <p>Você deve ter uma chave copiada e guardada:</p>
           <ul style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--color-text); line-height: 2; padding-left: var(--space-lg); margin-top: var(--space-sm);">
-            <li><strong>ANTHROPIC_API_KEY</strong> (começa com 'sk-ant-...')</li>
             <li><strong>OPENAI_API_KEY</strong> (começa com 'sk-...')</li>
           </ul>
-          <p style="margin-top: var(--space-sm);">Você vai usar essas duas chaves na próxima etapa.</p>
+          <p style="margin-top: var(--space-sm);">Você vai usar essa chave na próxima etapa.</p>
         </div>
 
         <!-- AC26: Troubleshooting accordion -->
@@ -4501,7 +4482,7 @@ fatal: repository not found</div>
           <div class="troubleshoot-body">
             <div class="troubleshoot-body__inner">
               <h4>Não tenho cartão de crédito internacional</h4>
-              <p>A Anthropic aceita cartões nacionais (Visa/Mastercard). A OpenAI pode exigir cartão internacional -- neste caso, um cartão pré-pago internacional resolve.</p>
+              <p>A OpenAI pode exigir cartão internacional -- neste caso, um cartão pré-pago internacional (Nubank, Wise ou Inter) resolve.</p>
 
               <h4>A chave já sumiu antes de copiar</h4>
               <p>Você precisará criar uma nova chave. Clique em 'Create Key' novamente e desta vez copie imediatamente.</p>
@@ -4521,7 +4502,7 @@ fatal: repository not found</div>
                 <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </span>
             </span>
-            <span class="step-complete-box__label">Concluí esta etapa -- tenho as duas API Keys guardadas</span>
+            <span class="step-complete-box__label">Concluí esta etapa -- tenho a API Key da OpenAI guardada</span>
           </label>
           <div class="step-complete-box__celebration">
             <div class="confetti-container"></div>
@@ -4554,8 +4535,8 @@ fatal: repository not found</div>
 
         <!-- AC3: Transition Block -->
         <div class="block-transition block-transition--animate">
-          <div class="block-transition__recap">Na etapa anterior, você obteve suas duas API Keys -- as chaves de acesso aos serviços de IA.</div>
-          <div class="block-transition__bridge">Agora vamos juntar tudo. Primeiro instalamos as dependências do projeto, depois rodamos o assistente de configuração que vai usar suas chaves.</div>
+          <div class="block-transition__recap">Na etapa anterior, você obteve sua API Key da OpenAI -- a chave de acesso ao serviço de transcrição de áudio.</div>
+          <div class="block-transition__bridge">Agora vamos juntar tudo. Primeiro instalamos as dependências do projeto, depois rodamos o assistente de configuração que vai usar sua chave.</div>
         </div>
 
         <!-- AC2: Pre-Check Block -->
@@ -4563,7 +4544,7 @@ fatal: repository not found</div>
           <div class="precheck-block__header">Antes de começar esta etapa:</div>
           <ul class="precheck-block__list">
             <li class="precheck-block__item" data-requires-step="5"><span class="precheck-block__item-icon"></span> Etapa 5: Mega Brain baixado</li>
-            <li class="precheck-block__item" data-requires-step="6"><span class="precheck-block__item-icon"></span> Etapa 6: API Keys obtidas</li>
+            <li class="precheck-block__item" data-requires-step="6"><span class="precheck-block__item-icon"></span> Etapa 6: API Key obtida</li>
           </ul>
           <div class="precheck-block__result"></div>
         </div>
@@ -4637,7 +4618,7 @@ ENOENT: no such file or directory, open 'package.json'</div>
         </div>
 
         <div class="block-instruction">
-          <p>O assistente vai fazer perguntas sobre suas API Keys. Para cada pergunta, <strong>cole a chave correspondente</strong> e pressione Enter.</p>
+          <p>O assistente vai pedir sua API Key da OpenAI. <strong>Cole a chave</strong> e pressione Enter.</p>
         </div>
 
         <!-- AC8: Info alert about terminal hiding key input -->
@@ -4647,7 +4628,7 @@ ENOENT: no such file or directory, open 'package.json'</div>
           </div>
           <div class="alert__content">
             <div class="alert__title">Nada aparece quando colo?</div>
-            <div class="alert__body">Quando você cola uma API Key no terminal, o cursor pode não se mover e nada aparece na tela. Isso é normal -- o terminal esconde a chave por segurança. Pressione Enter mesmo assim.</div>
+            <div class="alert__body">Quando você cola a API Key no terminal, o cursor pode não se mover e nada aparece na tela. Isso é normal -- o terminal esconde a chave por segurança. Pressione Enter mesmo assim.</div>
           </div>
         </div>
 
@@ -4655,10 +4636,32 @@ ENOENT: no such file or directory, open 'package.json'</div>
         <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 20px; color: var(--color-text); margin: var(--space-xl) 0 var(--space-md);">O que o assistente vai perguntar</h3>
 
         <ol style="font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text); line-height: 2; padding-left: var(--space-lg);">
-          <li><strong>ANTHROPIC_API_KEY:</strong> Cole sua chave da Anthropic (começa com <code style="background: rgba(212,175,55,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">sk-ant-...</code>) e pressione Enter</li>
           <li><strong>OPENAI_API_KEY:</strong> Cole sua chave da OpenAI (começa com <code style="background: rgba(212,175,55,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">sk-...</code>) e pressione Enter</li>
-          <li>Para qualquer outra pergunta opcional: pressione Enter sem digitar nada (aceita o valor padrão)</li>
+          <li><strong>VOYAGE_API_KEY:</strong> Apenas pressione Enter para pular (opcional)</li>
+          <li><strong>Google Client ID:</strong> Apenas pressione Enter para pular (opcional)</li>
         </ol>
+
+        <!-- Info alert: Voyage API Key and Google Client ID -->
+        <div class="alert-info" role="note">
+          <div class="alert__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </div>
+          <div class="alert__content">
+            <div class="alert__title">Prompts opcionais no setup</div>
+            <div class="alert__body">Depois de informar a chave da OpenAI, o assistente vai perguntar sobre mais duas configurações opcionais. Basta pressionar Enter para pular ambas:
+              <ul style="margin-top: var(--space-sm); padding-left: var(--space-lg); line-height: 1.8;">
+                <li><strong>VOYAGE_API_KEY</strong> -- usada para busca semantica nos seus documentos. Opcional: o sistema funciona sem ela, com qualidade de busca reduzida.</li>
+                <li><strong>Google Client ID</strong> -- usada para importar arquivos do Google Drive. Opcional: so necessaria se voce quiser importar arquivos direto do Drive.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot SS-05: Setup prompts showing Voyage and Google Client ID -->
+        <figure class="screenshot-figure">
+          <img src="screenshots/SS-05.png" alt="Terminal mostrando prompts opcionais do setup -- Voyage API Key e Google Client ID" class="screenshot-img" loading="lazy">
+          <figcaption class="screenshot-caption">Prompts opcionais do setup -- pressione Enter para pular</figcaption>
+        </figure>
 
         <!-- AC10: Verification block -->
         <div class="block-verify">
@@ -4673,8 +4676,9 @@ ENOENT: no such file or directory, open 'package.json'</div>
             <h4>Se deu certo</h4>
             <div class="terminal-compare__output">$ npx mega-brain-ai setup
 Setting up Mega Brain...
-ANTHROPIC_API_KEY: ********
 OPENAI_API_KEY: ********
+VOYAGE_API_KEY (Enter to skip):
+Google Client ID (Enter to skip):
 
 Setup complete! Configuration saved to .env</div>
           </div>
@@ -4704,7 +4708,7 @@ Cannot find module 'mega-brain-ai'</div>
               <p style="font-size: 15px; line-height: 1.7;">Você não está dentro da pasta mega-brain. No terminal, verifique onde está com <code style="background: rgba(212,175,55,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">pwd</code> (Mac) ou <code style="background: rgba(212,175,55,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">cd</code> (Windows) e navegue até a pasta correta.</p>
 
               <h4>ERR_INVALID_API_KEY durante o setup</h4>
-              <p style="font-size: 15px; line-height: 1.7;">A chave que você colou está errada ou incompleta. Abra o <strong>console.anthropic.com</strong> ou <strong>platform.openai.com</strong>, crie uma nova chave e tente novamente.</p>
+              <p style="font-size: 15px; line-height: 1.7;">A chave que você colou está errada ou incompleta. Abra o <strong>platform.openai.com</strong>, crie uma nova chave e tente novamente.</p>
 
               <h4>npx mega-brain-ai: command not found</h4>
               <p style="font-size: 15px; line-height: 1.7;">Tente rodar <code style="background: rgba(212,175,55,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">npm install -g mega-brain-ai</code> primeiro, depois tente o setup novamente.</p>
@@ -4754,7 +4758,7 @@ Cannot find module 'mega-brain-ai'</div>
 
         <!-- AC16: Transition Block -->
         <div class="block-transition block-transition--animate">
-          <div class="block-transition__recap">Na etapa anterior, você configurou o Mega Brain com suas API Keys.</div>
+          <div class="block-transition__recap">Na etapa anterior, você configurou o Mega Brain com sua API Key da OpenAI.</div>
           <div class="block-transition__bridge">Agora vamos confirmar que tudo funcionou. Um único comando vai verificar o sistema inteiro e te dizer se está tudo certo.</div>
         </div>
 
@@ -4817,7 +4821,7 @@ Cannot find module 'mega-brain-ai'</div>
               <p style="font-size: 15px; line-height: 1.7;">Certifique-se de que você está digitando no chat do Claude Code (a extensão), não no terminal do VS Code. São janelas diferentes.</p>
 
               <h4>Score abaixo de 40</h4>
-              <p style="font-size: 15px; line-height: 1.7;">Leia o relatório completo do briefing -- ele lista especificamente o que está faltando. Os problemas mais comuns são API Keys incorretas (volte para Etapa 6) ou npm install não completou (volte para Etapa 7).</p>
+              <p style="font-size: 15px; line-height: 1.7;">Leia o relatório completo do briefing -- ele lista especificamente o que está faltando. Os problemas mais comuns são API Key incorreta (volte para Etapa 6) ou npm install não completou (volte para Etapa 7).</p>
 
               <h4>O Claude Code não responde</h4>
               <p style="font-size: 15px; line-height: 1.7;">Verifique se sua conta Claude está ativa e com crédito disponível em <strong>claude.ai</strong>.</p>
@@ -5099,7 +5103,7 @@ Cannot find module 'mega-brain-ai'</div>
             <li style="padding: var(--space-xs) 0;"><span style="color: #22c55e; margin-right: 8px;">&#10003;</span> Node.js 18+</li>
             <li style="padding: var(--space-xs) 0;"><span style="color: #22c55e; margin-right: 8px;">&#10003;</span> Python 3.10+</li>
             <li style="padding: var(--space-xs) 0;"><span style="color: #22c55e; margin-right: 8px;">&#10003;</span> Mega Brain (clonado e configurado)</li>
-            <li style="padding: var(--space-xs) 0;"><span style="color: #22c55e; margin-right: 8px;">&#10003;</span> API Keys (Anthropic + OpenAI)</li>
+            <li style="padding: var(--space-xs) 0;"><span style="color: #22c55e; margin-right: 8px;">&#10003;</span> API Key (OpenAI)</li>
             <li style="padding: var(--space-xs) 0;"><span style="color: #22c55e; margin-right: 8px;">&#10003;</span> GitHub (conta criada + Git configurado)</li>
           </ul>
           <p id="step-9-duration" style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--color-text-secondary); text-align: center; margin-bottom: var(--space-lg);"></p>
@@ -5141,7 +5145,7 @@ Cannot find module 'mega-brain-ai'</div>
           <li><span style="color: #22c55e; margin-right: 10px; font-weight: bold;">&#10003;</span> Node.js 18+</li>
           <li><span style="color: #22c55e; margin-right: 10px; font-weight: bold;">&#10003;</span> Python 3.10+</li>
           <li><span style="color: #22c55e; margin-right: 10px; font-weight: bold;">&#10003;</span> Mega Brain (clonado e configurado)</li>
-          <li><span style="color: #22c55e; margin-right: 10px; font-weight: bold;">&#10003;</span> API Keys (Anthropic + OpenAI)</li>
+          <li><span style="color: #22c55e; margin-right: 10px; font-weight: bold;">&#10003;</span> API Key (OpenAI)</li>
           <li><span style="color: #22c55e; margin-right: 10px; font-weight: bold;">&#10003;</span> GitHub (conta criada + Git configurado)</li>
         </ul>
 
@@ -5214,7 +5218,7 @@ Cannot find module 'mega-brain-ai'</div>
           'Instalar Node.js',
           'Instalar Python',
           'Baixar o Mega Brain',
-          'Obter API Keys',
+          'Obter API Key',
           'Configurar o Mega Brain',
           'Primeiro Uso',
           'GitHub (Opcional)'
@@ -6189,7 +6193,10 @@ Cannot find module 'mega-brain-ai'</div>
           btn.addEventListener('click', function() {
             var codeEl = this.closest('.code-block').querySelector('.code-block__code');
             if (!codeEl) return;
-            var text = codeEl.textContent.trim();
+            // Clone and remove glossary tooltips to get clean text
+            var clone = codeEl.cloneNode(true);
+            clone.querySelectorAll('.glossary-tooltip').forEach(function(tip) { tip.remove(); });
+            var text = clone.textContent.trim();
             copyToClipboard(text, this);
           });
         });
