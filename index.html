@@ -3719,6 +3719,20 @@
           <figcaption class="screenshot-caption">Painel de Extensions do VS Code buscando "Claude Code"</figcaption>
         </figure>
 
+        <!-- Important: Disable USE TERMINAL setting -->
+        <div class="alert-warning" role="note" style="margin-top: var(--space-lg);">
+          <div class="alert__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <div class="alert__content">
+            <div class="alert__title">Desmarque "Use Terminal" (principalmente no Mac)</div>
+            <div class="alert__body">
+              <p style="margin-bottom: var(--space-sm);">Em alguns casos, a extensão Claude Code vem com a opção <strong>"Use Terminal"</strong> ativada por padrão. Essa opção precisa estar <strong>desmarcada</strong>.</p>
+              <p style="margin-bottom: var(--space-sm);">Para verificar: abra as configurações do VS Code (<strong>Ctrl+,</strong> no Windows ou <strong>Cmd+,</strong> no Mac), busque por <strong>"Claude Code"</strong>, e certifique-se de que a opção <strong>"Use Terminal"</strong> está desmarcada.</p>
+            </div>
+          </div>
+        </div>
+
         <!-- AC23: Login instructions -->
         <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 20px; color: var(--color-text); margin: var(--space-xl) 0 var(--space-md);">3. Fazer login na extensão</h3>
 
@@ -4786,6 +4800,17 @@ Cannot find module 'mega-brain-ai'</div>
             <span class="code-block__sr-status" aria-live="polite"></span>
           </div>
           <p style="margin-top: var(--space-md); font-family: 'Inter', sans-serif; font-size: 16px; color: var(--color-text);">Aguarde -- o sistema vai analisar sua configuração e retornar um relatório.</p>
+        </div>
+
+        <!-- Permissions alert during jarvis-briefing -->
+        <div class="alert-warning" role="note">
+          <div class="alert__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <div class="alert__content">
+            <div class="alert__title">O Claude vai pedir permissões</div>
+            <div class="alert__body">Durante a execução do <code style="background: rgba(212,175,55,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">/jarvis-briefing</code>, o Claude vai pedir permissão para acessar arquivos e executar comandos. Toda vez que aparecer, clique em <strong>Yes</strong> (ou pressione <strong>Y</strong>). Isso é normal -- ele precisa dessas permissões para verificar se tudo está configurado corretamente.</div>
+          </div>
         </div>
 
         <!-- AC19: Screenshot SS-06 -->
